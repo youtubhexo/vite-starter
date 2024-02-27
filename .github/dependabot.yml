@@ -1,0 +1,10 @@
+version: 2
+updates:
+  - package-ecosystem: "npm" # Dependabot 会自动识别 pnpm
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    commit-message:
+      prefix: "chore"
+      include: "scope"
+    open-pull-requests-limit: 5
