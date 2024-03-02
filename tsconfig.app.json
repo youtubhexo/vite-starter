@@ -1,6 +1,6 @@
 {
   "extends": "@vue/tsconfig/tsconfig.dom.json",
-  "include": ["env.d.ts", "src/**/*", "src/**/*.vue","typed-router.d.ts","AutoImport({ /* options */ }),"],
+  "include": ["env.d.ts", "src/**/*", "src/**/*.vue","typed-router.d.ts","components.d.ts","components.d.ts"],
   "exclude": ["src/**/__tests__/*"],
   "compilerOptions": {
     "composite": true,
