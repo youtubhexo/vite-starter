@@ -5,6 +5,9 @@
     </span>
     <div>Now: {{ now }}</div>
     <HelloWorld></HelloWorld>
+    <!-- Sun in light mode, Moon in dark mode, from Carbon -->
+    <button class="i-carbon-sun dark:i-carbon-moon" />
+    <div class="i-tabler:a-b w-1em h-1em" style="color: #669e2e;"></div>
 
     <!-- //<img src="https://desperado.cloud/picgo-img//20240227135105.png"> -->
   </div>

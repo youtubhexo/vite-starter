@@ -18,6 +18,9 @@ dependencies:
     version: 4.3.0(vue@3.4.20)
 
 devDependencies:
+  '@iconify/json':
+    specifier: ^2.2.188
+    version: 2.2.188
   '@rushstack/eslint-patch':
     specifier: ^1.7.2
     version: 1.7.2
@@ -750,6 +753,13 @@ packages:
 
   /@humanwhocodes/object-schema@2.0.2:
     resolution: {integrity: sha512-6EwiSjwWYP7pTckG6I5eyFANjPhmPjUX9JRLUSfNPC7FX7zK9gyZAfUEaECL6ALTpGX5AjnBq3C9XmVWPitNpw==}
+    dev: true
+
+  /@iconify/json@2.2.188:
+    resolution: {integrity: sha512-gsJwZ60Vb5IrtjYu+Al4qMaML9ZKUnop6Gi0537ZcA6nEhe3Nb58WH4c6b1+mXOHwOkFlLA8AFBXJUHY5nKMdA==}
+    dependencies:
+      '@iconify/types': 2.0.0
+      pathe: 1.1.2
     dev: true
 
   /@iconify/types@2.0.0:
