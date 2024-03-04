@@ -1,5 +1,9 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 dependencies:
   '@unocss/reset':
     specifier: ^0.58.5
@@ -34,8 +38,8 @@ devDependencies:
     specifier: ^21.1.6
     version: 21.1.6
   '@types/node':
-    specifier: ^20.11.20
-    version: 20.11.20
+    specifier: ^20.11.24
+    version: 20.11.24
   '@unocss/preset-wind':
     specifier: ^0.58.5
     version: 0.58.5
@@ -101,7 +105,7 @@ devDependencies:
     version: 0.8.4(rollup@2.79.1)(vue-router@4.3.0)(vue@3.4.20)
   vite:
     specifier: ^5.1.4
-    version: 5.1.4(@types/node@20.11.20)(sass@1.71.1)
+    version: 5.1.4(@types/node@20.11.24)(sass@1.71.1)
   vite-plugin-pwa:
     specifier: ^0.19.2
     version: 0.19.2(vite@5.1.4)(workbox-build@7.0.0)(workbox-window@7.0.0)
@@ -110,7 +114,7 @@ devDependencies:
     version: 0.11.0(vite@5.1.4)(vue-router@4.3.0)(vue@3.4.20)
   vitest:
     specifier: ^1.3.1
-    version: 1.3.1(@types/node@20.11.20)(jsdom@24.0.0)(sass@1.71.1)
+    version: 1.3.1(@types/node@20.11.24)(jsdom@24.0.0)(sass@1.71.1)
   vue-tsc:
     specifier: ^1.8.27
     version: 1.8.27(typescript@5.3.3)
@@ -2025,7 +2029,7 @@ packages:
   /@types/jsdom@21.1.6:
     resolution: {integrity: sha512-/7kkMsC+/kMs7gAYmmBR9P0vGTnOoLhQhyhQJSlXGI5bzTHp6xdo0TtKWQAsz6pmSAeVqKSbqeyP6hytqr9FDw==}
     dependencies:
-      '@types/node': 20.11.20
+      '@types/node': 20.11.24
       '@types/tough-cookie': 4.0.5
       parse5: 7.1.2
     dev: true
@@ -2036,6 +2040,12 @@ packages:
 
   /@types/node@20.11.20:
     resolution: {integrity: sha512-7/rR21OS+fq8IyHTgtLkDK949uzsa6n8BkziAKtPVpugIkO6D+/ooXMvzXxDnZrmtXVfjb1bKQafYpb8s89LOg==}
+    dependencies:
+      undici-types: 5.26.5
+    dev: true
+
+  /@types/node@20.11.24:
+    resolution: {integrity: sha512-Kza43ewS3xoLgCEpQrsT+xRo/EJej1y0kVYGiLFE1NEODXGzTfwiC6tXTLMQskn1X4/Rjlh0MQUvx9W+L9long==}
     dependencies:
       undici-types: 5.26.5
     dev: true
@@ -2072,7 +2082,7 @@ packages:
     resolution: {integrity: sha512-oJoftv0LSuaDZE3Le4DbKX+KS9G36NzOeSap90UIK0yMA/NhKJhqlSGtNDORNRaIbQfzjXDrQa0ytJ6mNRGz/Q==}
     requiresBuild: true
     dependencies:
-      '@types/node': 20.11.20
+      '@types/node': 20.11.24
     dev: true
     optional: true
 
@@ -2223,7 +2233,7 @@ packages:
       '@unocss/core': 0.58.5
       '@unocss/reset': 0.58.5
       '@unocss/vite': 0.58.5(rollup@2.79.1)(vite@5.1.4)
-      vite: 5.1.4(@types/node@20.11.20)(sass@1.71.1)
+      vite: 5.1.4(@types/node@20.11.24)(sass@1.71.1)
     transitivePeerDependencies:
       - rollup
     dev: true
@@ -2420,7 +2430,7 @@ packages:
       chokidar: 3.6.0
       fast-glob: 3.3.2
       magic-string: 0.30.7
-      vite: 5.1.4(@types/node@20.11.20)(sass@1.71.1)
+      vite: 5.1.4(@types/node@20.11.24)(sass@1.71.1)
     transitivePeerDependencies:
       - rollup
     dev: true
@@ -2435,7 +2445,7 @@ packages:
       '@babel/core': 7.23.9
       '@babel/plugin-transform-typescript': 7.23.6(@babel/core@7.23.9)
       '@vue/babel-plugin-jsx': 1.2.1(@babel/core@7.23.9)
-      vite: 5.1.4(@types/node@20.11.20)(sass@1.71.1)
+      vite: 5.1.4(@types/node@20.11.24)(sass@1.71.1)
       vue: 3.4.20(typescript@5.3.3)
     transitivePeerDependencies:
       - supports-color
@@ -2448,7 +2458,7 @@ packages:
       vite: ^5.0.0
       vue: ^3.2.25
     dependencies:
-      vite: 5.1.4(@types/node@20.11.20)(sass@1.71.1)
+      vite: 5.1.4(@types/node@20.11.24)(sass@1.71.1)
       vue: 3.4.20(typescript@5.3.3)
     dev: true
 
@@ -6406,7 +6416,7 @@ packages:
       '@unocss/transformer-directives': 0.58.5
       '@unocss/transformer-variant-group': 0.58.5
       '@unocss/vite': 0.58.5(rollup@2.79.1)(vite@5.1.4)
-      vite: 5.1.4(@types/node@20.11.20)(sass@1.71.1)
+      vite: 5.1.4(@types/node@20.11.24)(sass@1.71.1)
     transitivePeerDependencies:
       - postcss
       - rollup
@@ -6555,7 +6565,7 @@ packages:
       extsprintf: 1.3.0
     dev: true
 
-  /vite-node@1.3.1(@types/node@20.11.20)(sass@1.71.1):
+  /vite-node@1.3.1(@types/node@20.11.24)(sass@1.71.1):
     resolution: {integrity: sha512-azbRrqRxlWTJEVbzInZCTchx0X69M/XPTCz4H+TLvlTcR/xH/3hkRqhOakT41fMJCMzXTu4UvegkZiEoJAWvng==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
@@ -6564,7 +6574,7 @@ packages:
       debug: 4.3.4(supports-color@8.1.1)
       pathe: 1.1.2
       picocolors: 1.0.0
-      vite: 5.1.4(@types/node@20.11.20)(sass@1.71.1)
+      vite: 5.1.4(@types/node@20.11.24)(sass@1.71.1)
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -6591,7 +6601,7 @@ packages:
       debug: 4.3.4(supports-color@8.1.1)
       fast-glob: 3.3.2
       pretty-bytes: 6.1.1
-      vite: 5.1.4(@types/node@20.11.20)(sass@1.71.1)
+      vite: 5.1.4(@types/node@20.11.24)(sass@1.71.1)
       workbox-build: 7.0.0
       workbox-window: 7.0.0
     transitivePeerDependencies:
@@ -6607,14 +6617,14 @@ packages:
     dependencies:
       debug: 4.3.4(supports-color@8.1.1)
       fast-glob: 3.3.2
-      vite: 5.1.4(@types/node@20.11.20)(sass@1.71.1)
+      vite: 5.1.4(@types/node@20.11.24)(sass@1.71.1)
       vue: 3.4.20(typescript@5.3.3)
       vue-router: 4.3.0(vue@3.4.20)
     transitivePeerDependencies:
       - supports-color
     dev: true
 
-  /vite@5.1.4(@types/node@20.11.20)(sass@1.71.1):
+  /vite@5.1.4(@types/node@20.11.24)(sass@1.71.1):
     resolution: {integrity: sha512-n+MPqzq+d9nMVTKyewqw6kSt+R3CkvF9QAKY8obiQn8g1fwTscKxyfaYnC632HtBXAQGc1Yjomphwn1dtwGAHg==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
@@ -6642,7 +6652,7 @@ packages:
       terser:
         optional: true
     dependencies:
-      '@types/node': 20.11.20
+      '@types/node': 20.11.24
       esbuild: 0.19.12
       postcss: 8.4.35
       rollup: 4.12.0
@@ -6651,7 +6661,7 @@ packages:
       fsevents: 2.3.3
     dev: true
 
-  /vitest@1.3.1(@types/node@20.11.20)(jsdom@24.0.0)(sass@1.71.1):
+  /vitest@1.3.1(@types/node@20.11.24)(jsdom@24.0.0)(sass@1.71.1):
     resolution: {integrity: sha512-/1QJqXs8YbCrfv/GPQ05wAZf2eakUPLPa18vkJAKE7RXOKfVHqMZZ1WlTjiwl6Gcn65M5vpNUB6EFLnEdRdEXQ==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
@@ -6676,7 +6686,7 @@ packages:
       jsdom:
         optional: true
     dependencies:
-      '@types/node': 20.11.20
+      '@types/node': 20.11.24
       '@vitest/expect': 1.3.1
       '@vitest/runner': 1.3.1
       '@vitest/snapshot': 1.3.1
@@ -6695,8 +6705,8 @@ packages:
       strip-literal: 2.0.0
       tinybench: 2.6.0
       tinypool: 0.8.2
-      vite: 5.1.4(@types/node@20.11.20)(sass@1.71.1)
-      vite-node: 1.3.1(@types/node@20.11.20)(sass@1.71.1)
+      vite: 5.1.4(@types/node@20.11.24)(sass@1.71.1)
+      vite-node: 1.3.1(@types/node@20.11.24)(sass@1.71.1)
       why-is-node-running: 2.2.2
     transitivePeerDependencies:
       - less
@@ -6968,6 +6978,7 @@ packages:
 
   /workbox-google-analytics@7.0.0:
     resolution: {integrity: sha512-MEYM1JTn/qiC3DbpvP2BVhyIH+dV/5BjHk756u9VbwuAhu0QHyKscTnisQuz21lfRpOwiS9z4XdqeVAKol0bzg==}
+    deprecated: It is not compatible with newer versions of GA starting with v4, as long as you are using GAv3 it should be ok, but the package is not longer being maintained
     dependencies:
       workbox-background-sync: 7.0.0
       workbox-core: 7.0.0
