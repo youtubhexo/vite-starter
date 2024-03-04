@@ -13,6 +13,6 @@
   ],
   "compilerOptions": {
     "module": "NodeNext",
-    "types": ["vite-plugin-vue-layouts/client"]
+    "types": ["vite-plugin-vue-layouts/client","vite-plugin-pwa/client"]
   }
 }
