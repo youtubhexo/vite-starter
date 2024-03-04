@@ -1,7 +1,7 @@
 <template>
   <div>
     <span class="text-3xl font-bold underline">
-      你好
+      你好 123
     </span>
     <div>Now: {{ now }}</div>
     <HelloWorld></HelloWorld>
