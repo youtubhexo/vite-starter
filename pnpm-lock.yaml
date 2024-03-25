@@ -1,5 +1,9 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 dependencies:
   '@unocss/reset':
     specifier: ^0.58.5
@@ -22,8 +26,8 @@ dependencies:
 
 devDependencies:
   '@iconify/json':
-    specifier: ^2.2.189
-    version: 2.2.189
+    specifier: ^2.2.195
+    version: 2.2.195
   '@rushstack/eslint-patch':
     specifier: ^1.7.2
     version: 1.7.2
@@ -1680,8 +1684,8 @@ packages:
     resolution: {integrity: sha512-6EwiSjwWYP7pTckG6I5eyFANjPhmPjUX9JRLUSfNPC7FX7zK9gyZAfUEaECL6ALTpGX5AjnBq3C9XmVWPitNpw==}
     dev: true
 
-  /@iconify/json@2.2.189:
-    resolution: {integrity: sha512-q0DxpGQuQhtoNXELlHKbkxTSOjuzf/3Qaqq5uuJ/dM62XH1GUUxlXsgH/Moh/CEcs3evzWFp2mjIQifZmihQTA==}
+  /@iconify/json@2.2.195:
+    resolution: {integrity: sha512-oDO79OGefkm/F4xeRDWSiigxsf7yMJAHRzyOoqmkrerUDJ/5JxRSsezUJhYlVarbRFdaBLGh7joJwtLO5mAmXw==}
     dependencies:
       '@iconify/types': 2.0.0
       pathe: 1.1.2
@@ -7010,6 +7014,7 @@ packages:
 
   /workbox-google-analytics@7.0.0:
     resolution: {integrity: sha512-MEYM1JTn/qiC3DbpvP2BVhyIH+dV/5BjHk756u9VbwuAhu0QHyKscTnisQuz21lfRpOwiS9z4XdqeVAKol0bzg==}
+    deprecated: It is not compatible with newer versions of GA starting with v4, as long as you are using GAv3 it should be ok, but the package is not longer being maintained
     dependencies:
       workbox-background-sync: 7.0.0
       workbox-core: 7.0.0
