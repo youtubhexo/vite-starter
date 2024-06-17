@@ -25,6 +25,9 @@ dependencies:
     version: 4.3.2(vue@3.4.27)
 
 devDependencies:
+  '@iconify/json':
+    specifier: ^2.2.219
+    version: 2.2.219
   '@rushstack/eslint-patch':
     specifier: ^1.8.0
     version: 1.10.3
@@ -37,6 +40,9 @@ devDependencies:
   '@types/node':
     specifier: ^20.12.5
     version: 20.14.2
+  '@unocss/preset-icons':
+    specifier: ^0.61.0
+    version: 0.61.0
   '@unocss/preset-wind':
     specifier: ^0.61.0
     version: 0.61.0
@@ -813,6 +819,13 @@ packages:
 
   /@humanwhocodes/object-schema@2.0.3:
     resolution: {integrity: sha512-93zYdMES/c1D69yZiKDBj0V24vqNzB/koF26KPaagAfd3P/4gUlh3Dys5ogAK+Exi9QyzlD8x/08Zt7wIKcDcA==}
+    dev: true
+
+  /@iconify/json@2.2.219:
+    resolution: {integrity: sha512-q8asqbM61woVZ9rJGm/gvW46i5vdeHrq4TqZQ/5wF5ypk4pAZU9+4qVa5NQE2MZngYkMPeO68PDGGl7WaEV8jQ==}
+    dependencies:
+      '@iconify/types': 2.0.0
+      pathe: 1.1.2
     dev: true
 
   /@iconify/types@2.0.0:

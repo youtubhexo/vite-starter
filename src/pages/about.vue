@@ -7,6 +7,7 @@
   </h1>
   <p>{{ width }} x {{ height }}</p>
   <el-input v-model="input" style="width: 240px" placeholder="Please input" />
+  <div class="i-bi:1-circle w-1em h-1em"></div>
 </template>
 
 <script setup lang="ts">
