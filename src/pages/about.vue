@@ -5,10 +5,13 @@
   <h1 className="text-3xl font-bold underline">
     Hello world!
   </h1>
+  <p>{{ width }} x {{ height }}</p>
 </template>
 
 <script setup lang="ts">
+import { useWindowSize } from '@vueuse/core'
 
+const { width, height } = useWindowSize()
 </script>
 
 <style scoped></style>
