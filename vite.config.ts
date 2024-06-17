@@ -5,7 +5,7 @@ import VueRouter from 'unplugin-vue-router/vite'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
 import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
-
+import Layouts from 'vite-plugin-vue-layouts'
 import vue from '@vitejs/plugin-vue'
 import vueJsx from '@vitejs/plugin-vue-jsx'
 
@@ -44,6 +44,11 @@ export default defineConfig({
     Components({
       /* options */
       resolvers: [ElementPlusResolver()]
+    }),
+    Layouts({
+      layoutsDirs: 'src/layouts',
+      pagesDirs: 'src/pages',
+      defaultLayout: 'myDefault'
     })
   ],
   resolve: {

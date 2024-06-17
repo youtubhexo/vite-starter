@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router/auto'
 import { routes } from 'vue-router/auto-routes'
+import { setupLayouts } from 'virtual:generated-layouts'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -8,7 +9,7 @@ const router = createRouter({
   //  /about   webhistory模式
   //  SEO   ssr   //?Nuxt.js  描述: 一个基于 Vue.js 的框架，提供了 SSR 和静态站点生成功能。
 
-  routes
+  routes: setupLayouts(routes)
 })
 
 export default router

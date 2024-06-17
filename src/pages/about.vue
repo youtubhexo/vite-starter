@@ -13,8 +13,14 @@
 <script setup lang="ts">
 import { useWindowSize } from '@vueuse/core'
 
+import { ref } from 'vue'
+
 const { width, height } = useWindowSize()
 const input = ref('')
 </script>
 
 <style scoped></style>
+<route lang="yaml">
+meta:
+  layout: header
+</route>
