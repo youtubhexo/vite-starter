@@ -3,6 +3,9 @@ import UnoCSS from 'unocss/vite'
 import { defineConfig } from 'vite'
 import VueRouter from 'unplugin-vue-router/vite'
 import AutoImport from 'unplugin-auto-import/vite'
+import Components from 'unplugin-vue-components/vite'
+import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
+
 import vue from '@vitejs/plugin-vue'
 import vueJsx from '@vitejs/plugin-vue-jsx'
 
@@ -37,6 +40,10 @@ export default defineConfig({
           ]
         }
       ]
+    }),
+    Components({
+      /* options */
+      resolvers: [ElementPlusResolver()]
     })
   ],
   resolve: {

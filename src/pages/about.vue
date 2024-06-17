@@ -6,12 +6,14 @@
     Hello world!
   </h1>
   <p>{{ width }} x {{ height }}</p>
+  <el-input v-model="input" style="width: 240px" placeholder="Please input" />
 </template>
 
 <script setup lang="ts">
 import { useWindowSize } from '@vueuse/core'
 
 const { width, height } = useWindowSize()
+const input = ref('')
 </script>
 
 <style scoped></style>
